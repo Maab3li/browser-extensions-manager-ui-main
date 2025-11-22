@@ -192,14 +192,19 @@ body {
 }
 
 .active-toggle-btn-holder {
+    position: relative;
+    display: inline-block;
     background-color: hsl(3, 86%, 64%);
     width: 40px;
     height: 21px;
-    left: 19px;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;    
+}
+
+[data-theme = 'light'] .active-toggle-btn-holder {
+    background-color: hsl(3, 77%, 44%);
 }
 
 [data-theme = 'light'] .toggle-btn-holder {
@@ -290,5 +295,29 @@ body {
 @media(min-width: 1400px) {
     .extensions-list-header-title-wrapper {
         margin: 0px 10vw;
+    }
+}
+
+@media(min-width: 1435px) {
+    .header {
+        width: 98%;
+    }
+}
+
+@media(min-width: 1450px) {
+    .header {
+        width: 99%;
+    }
+}
+
+@media(min-width: 1470px) {
+    .header {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1486px) {
+    .header {
+        width: 101%;
     }
 }

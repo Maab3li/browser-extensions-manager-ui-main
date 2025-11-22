@@ -71,7 +71,9 @@ async function getAllExtensions () {
             toggleBtn.classList.add('toggle-btn')
             const toggleBtnCircle = document.createElement('span')
             toggleBtnCircle.classList.add('toggle-btn-circle')
+            
             if(extension.isActive == true) {
+               toggleBtnHolder.classList.remove('toggle-btn-holder')
                toggleBtnHolder.classList.add('active-toggle-btn-holder')
                toggleBtnCircle.style.left = '19px'
             }
@@ -227,13 +229,14 @@ async function getInactiveExtensions () {
 
 //function to toggle themes
 function toggleTheme() {
-    console.log(document.getElementById('theme-toggler').src)
-    if(document.getElementById('theme-toggler').src == 'http://127.0.0.1:3000/assets/images/icon-sun.svg') {
-        document.getElementById('theme-toggler').src = '/assets/images/icon-moon.svg'
+    if(document.getElementById('theme-toggler').src == './assets/images/icon-sun.svg') {
+        document.getElementById('logo').src = './assets/images/logo.svg'
+        document.getElementById('theme-toggler').src = './assets/images/icon-moon.svg'
         document.querySelector('html').setAttribute('data-theme', 'light')
     }
     else {
         document.getElementById('theme-toggler').src = './assets/images/icon-sun.svg'
+        document.getElementById('logo').src = './assets/images/logo2.png'
         document.querySelector('html').setAttribute('data-theme', 'dark')
     }
 }
