@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = 'dark'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link as="style" href="./assets/styles/style.css" rel="stylesheet" onload="this.print='all' ">
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!--Main header start-->
+    <header class="header" role="heading">
+      <span>
+        <img src="./assets/images/تصميم_بدون_عنوان__9_-removebg-preview.svg" alt="logo" />
+      </span>
+      <span id="sun-logo" class="sun-logo">
+        <img id="theme-toggler" src="" alt="sun logo" onclick="toggleTheme()"/>
+      </span>
+    </header>
+    <!--Main header end-->
+    <main>
+      <!--List header start-->
+      <div class="extensions-list-header-title-wrapper" role="heading">
+        <h1 id="extensions-list-title">Extensions List</h1>
+        <div aria-label="variant ways to display list" class="extensions-list-status">
+          <button onclick="{handleClick(this.id), getAllExtensions()}" id="all" class="nav-item" type="button">All</button>
+          <button onclick="{handleClick(this.id), getActiveExtensions()}" id="active" class="nav-item" type="button">Active</button>
+          <button onclick="{handleClick(this.id), getInactiveExtensions()}" id="inactive" class="nav-item" type="button">Inactive</button>
+        </div>
+      </div>
+      <!--List header end-->
+      <!--Extensions list start-->
+      <section id="extensions-section">
+
+      </section>
+      <!--Extensions list end-->
+    </main>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
