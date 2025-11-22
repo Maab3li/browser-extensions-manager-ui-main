@@ -229,7 +229,7 @@ async function getInactiveExtensions () {
 
 //function to toggle themes
 function toggleTheme() {
-    if(document.getElementById('theme-toggler').src == './assets/images/icon-sun.svg') {
+    if(document.getElementById('theme-toggler').src == 'https://github.com/Maab3li/browser-extensions-manager-ui-main/blob/master/assets/images/icon-sun.svg') {
         document.getElementById('logo').src = './assets/images/logo.svg'
         document.getElementById('theme-toggler').src = './assets/images/icon-moon.svg'
         document.querySelector('html').setAttribute('data-theme', 'light')
@@ -245,9 +245,8 @@ function toggleTheme() {
 && reset the active theme from localstorage */
 window.onload= function() {
     document.getElementById('theme-toggler').src = './assets/images/icon-sun.svg'
+    document.getElementById('logo').src = './assets/images/logo2.png'
     getAllExtensions();
-    const persistedTheme = localStorage.getItem('data-theme');
-    document.querySelector('html').setAttribute('data-theme', persistedTheme)
 }
 
 
