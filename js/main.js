@@ -230,8 +230,10 @@ async function getInactiveExtensions () {
 console.log(document.getElementById('theme-toggler').src)
 
 //function to toggle themes
-function toggleTheme() {
-    if(document.getElementById('theme-toggler').src == 'https://maab3li.github.io/browser-extensions-manager-ui-main/') {
+const themeToggleButton = document.getElementById('theme-toggler')
+
+themeToggleButton.addEventListener('click', () => {
+    if(document.getElementById('theme-toggler').src == './assets/images/icon-sun.svg') {
         document.getElementById('logo').src = './assets/images/logo.svg'
         document.getElementById('theme-toggler').src = './assets/images/icon-moon.svg'
         document.querySelector('html').setAttribute('data-theme', 'light')
@@ -241,7 +243,7 @@ function toggleTheme() {
         document.getElementById('logo').src = './assets/images/logo2.png'
         document.querySelector('html').setAttribute('data-theme', 'dark')
     }
-}
+}) 
 
 /*function to retreive all extensions when page refresh
 && reset the active theme from localstorage */

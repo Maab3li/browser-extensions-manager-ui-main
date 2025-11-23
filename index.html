@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="an extensions ui display to display browser extensions" >
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link as="style" href="./assets/styles/style.css" rel="stylesheet" onload="this.print='all' ">
   <title>Frontend Mentor | Browser extensions manager UI</title>
@@ -13,14 +14,14 @@
     <!--Main header start-->
     <header class="header" role="heading">
       <span>
-        <img id="logo" width="179px" height="41px" src="" alt="logo" />
+        <img fetchpriority="high" id="logo" width="179px" height="41px" src="" alt="logo" />
       </span>
       <span id="sun-logo" class="sun-logo">
-        <img id="theme-toggler" src="" alt="sun logo" onclick="toggleTheme()"/>
+        <img fetchpriority="high" id="theme-toggler" src="" alt="sun logo" />
       </span>
     </header>
     <!--Main header end-->
-    <main>
+    <main role="main">
       <!--List header start-->
       <div class="extensions-list-header-title-wrapper" role="heading">
         <h1 id="extensions-list-title">Extensions List</h1>
