@@ -39,13 +39,13 @@ body {
     background-color: hsl(200, 60%, 99%);
 }
 
-.sun-logo {
+.sun-icon {
     background-color: hsl(225, 23%, 24%);
     padding: 12px 15px;
     border-radius: 10px;
 }
 
-[data-theme = 'light'] .sun-logo {
+[data-theme = 'light'] .sun-icon {
     background-color: hsl(0, 0%, 78%);
 }
 

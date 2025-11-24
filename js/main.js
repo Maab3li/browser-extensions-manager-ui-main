@@ -233,15 +233,19 @@ console.log(document.getElementById('theme-toggler').src)
 const themeToggleButton = document.getElementById('theme-toggler')
 
 themeToggleButton.addEventListener('click', () => {
-    if(document.getElementById('theme-toggler').src == './assets/images/icon-sun.svg') {
+    if(document.querySelector('.sun-icon').id == 'sun-icon') {
         document.getElementById('logo').src = './assets/images/logo.svg'
         document.getElementById('theme-toggler').src = './assets/images/icon-moon.svg'
         document.querySelector('html').setAttribute('data-theme', 'light')
+        document.getElementById('sun-icon').setAttribute('id', 'moon-icon')
+        console.log(document.querySelector('icon'))
     }
     else {
+        document.querySelector('.sun-icon').id = 'sun-icon'
         document.getElementById('theme-toggler').src = './assets/images/icon-sun.svg'
         document.getElementById('logo').src = './assets/images/logo2.png'
         document.querySelector('html').setAttribute('data-theme', 'dark')
+        
     }
 }) 
 
