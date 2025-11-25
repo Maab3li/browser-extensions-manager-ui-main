@@ -277,10 +277,12 @@ themeToggleButton.addEventListener('click', () => {
 /*function to retreive all extensions when page refresh
 && reset the active theme from localstorage */
 window.onload= function() {
+    document.getElementById('loading-status').style.display = 'none'
     document.getElementById('theme-toggler').src = './assets/images/icon-sun.svg'
     document.getElementById('logo').src = './assets/images/logo2.png'
     getAllExtensions();
 }
+
 
 
 

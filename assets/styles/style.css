@@ -106,6 +106,15 @@ body {
     background-color: hsl(3, 77%, 44%);
 }
 
+#loading-status {
+    color: hsl(200, 60%, 99%);
+    text-align: center;
+}
+
+[data-theme='light'] #loading-status {
+    color: hsl(227, 75%, 14%);
+}
+
 .card {
     display: 'flex';
     flex-direction: column;
