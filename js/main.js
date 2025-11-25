@@ -52,24 +52,32 @@ async function getAllExtensions () {
         if(activeNav == 'all') {
             data.forEach(extension => {
             const card = document.createElement('div')
+            card.ariaLabel = 'a card contains extension details'
             const logo = document.createElement('img')
             logo.src = extension.logo
+            logo.ariaLabel = 'extension logo'
             const name = document.createElement('span')
             name.innerHTML = extension.name
+            name.ariaLabel = 'extension name'
             name.classList.add('name')
             const description = document.createElement('div')
             description.innerHTML = extension.description
+            description.ariaLabel = 'extension description'
             description.classList.add('description')
             const removeBtn = document.createElement('button')
             removeBtn.innerText = 'Remove'
+            removeBtn.ariaLabel = 'Button to remove the extension'
             removeBtn.classList.add('remove-btn')
             
             const toggleBtnHolder = document.createElement('label')
             toggleBtnHolder.classList.add('toggle-btn-holder')
+            toggleBtnHolder.ariaLabel = 'a shape that holds the button toggler to toggle extension status'
             const toggleBtn = document.createElement('input')
+            toggleBtn.ariaLabel = 'a toggle button to change extension status when clicked'
             toggleBtn.setAttribute('type', 'checkbox')
             toggleBtn.classList.add('toggle-btn')
             const toggleBtnCircle = document.createElement('span')
+            toggleBtnCircle.ariaLabel = 'the appearing circle representing if the extension status is on or off'
             toggleBtnCircle.classList.add('toggle-btn-circle')
             
             if(extension.isActive == true) {
@@ -116,23 +124,32 @@ async function getActiveExtensions () {
             data.forEach(extension => {
                 if(extension.isActive == true) {
                     const card = document.createElement('div')
+            card.ariaLabel = 'a card contains extension details'
             const logo = document.createElement('img')
             logo.src = extension.logo
+            logo.ariaLabel = 'extension logo'
             const name = document.createElement('span')
             name.innerHTML = extension.name
+            name.ariaLabel = 'extension name'
             name.classList.add('name')
             const description = document.createElement('div')
             description.innerHTML = extension.description
+            description.ariaLabel = 'extension description'
             description.classList.add('description')
             const removeBtn = document.createElement('button')
             removeBtn.innerText = 'Remove'
+            removeBtn.ariaLabel = 'Button to remove the extension'
             removeBtn.classList.add('remove-btn')
             
             const toggleBtnHolder = document.createElement('label')
+            toggleBtnHolder.classList.add('toggle-btn-holder')
+            toggleBtnHolder.ariaLabel = 'a shape that holds the button toggler to toggle extension status'
             const toggleBtn = document.createElement('input')
+            toggleBtn.ariaLabel = 'a toggle button to change extension status when clicked'
             toggleBtn.setAttribute('type', 'checkbox')
             toggleBtn.classList.add('toggle-btn')
             const toggleBtnCircle = document.createElement('span')
+            toggleBtnCircle.ariaLabel = 'the appearing circle representing if the extension status is on or off'
             toggleBtnCircle.classList.add('toggle-btn-circle')
             toggleBtnHolder.classList.add('active-toggle-btn-holder')
             toggleBtnCircle.style.left = '19px'
@@ -177,24 +194,32 @@ async function getInactiveExtensions () {
             data.forEach(extension => {
                 if(extension.isActive == false) {
                     const card = document.createElement('div')
+            card.ariaLabel = 'a card contains extension details'
             const logo = document.createElement('img')
             logo.src = extension.logo
+            logo.ariaLabel = 'extension logo'
             const name = document.createElement('span')
             name.innerHTML = extension.name
+            name.ariaLabel = 'extension name'
             name.classList.add('name')
             const description = document.createElement('div')
             description.innerHTML = extension.description
+            description.ariaLabel = 'extension description'
             description.classList.add('description')
             const removeBtn = document.createElement('button')
             removeBtn.innerText = 'Remove'
+            removeBtn.ariaLabel = 'Button to remove the extension'
             removeBtn.classList.add('remove-btn')
             
             const toggleBtnHolder = document.createElement('label')
             toggleBtnHolder.classList.add('toggle-btn-holder')
+            toggleBtnHolder.ariaLabel = 'a shape that holds the button toggler to toggle extension status'
             const toggleBtn = document.createElement('input')
+            toggleBtn.ariaLabel = 'a toggle button to change extension status when clicked'
             toggleBtn.setAttribute('type', 'checkbox')
             toggleBtn.classList.add('toggle-btn')
             const toggleBtnCircle = document.createElement('span')
+            toggleBtnCircle.ariaLabel = 'the appearing circle representing if the extension status is on or off'
             toggleBtnCircle.classList.add('toggle-btn-circle')
     
             toggleBtnHolder.append(toggleBtn, toggleBtnCircle)

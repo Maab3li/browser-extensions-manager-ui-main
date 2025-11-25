@@ -16,9 +16,9 @@
     <!--Main header start-->
     <header class="header" role="heading">
       <span>
-        <img fetchpriority="high" id="logo" width="179px" height="41px" src="" alt="logo" />
+        <img fetchpriority="high" id="logo" width="179px" height="41px" src="" alt="logo" aria-label="app logo" />
       </span>
-      <span id="sun-icon" class="sun-icon">
+      <span id="sun-icon" class="sun-icon" aria-label="theme toggle button">
         <img fetchpriority="high" id="theme-toggler" src="" alt="sun icon" />
       </span>
     </header>
@@ -28,14 +28,14 @@
       <div class="extensions-list-header-title-wrapper" role="heading">
         <h1 id="extensions-list-title">Extensions List</h1>
         <div aria-label="variant ways to display list" class="extensions-list-status">
-          <button onclick="{handleClick(this.id), getAllExtensions()}" id="all" class="nav-item" type="button">All</button>
-          <button onclick="{handleClick(this.id), getActiveExtensions()}" id="active" class="nav-item" type="button">Active</button>
-          <button onclick="{handleClick(this.id), getInactiveExtensions()}" id="inactive" class="nav-item" type="button">Inactive</button>
+          <button onclick="{handleClick(this.id), getAllExtensions()}" id="all" class="nav-item" type="button" aria-label="shows all extensions when clicked">All</button>
+          <button onclick="{handleClick(this.id), getActiveExtensions()}" id="active" class="nav-item" type="button" aria-label="shows active extensions when clicked">Active</button>
+          <button onclick="{handleClick(this.id), getInactiveExtensions()}" id="inactive" class="nav-item" type="button" aria-label="shows inactive extensions when clicked">Inactive</button>
         </div>
       </div>
       <!--List header end-->
       <!--Extensions list start-->
-      <section id="extensions-section">
+      <section id="extensions-section" aria-label="aria to display extensions">
 
       </section>
       <!--Extensions list end-->
