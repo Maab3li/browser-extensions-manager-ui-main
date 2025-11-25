@@ -77,7 +77,6 @@ async function getAllExtensions () {
             toggleBtn.setAttribute('type', 'checkbox')
             toggleBtn.classList.add('toggle-btn')
             const toggleBtnCircle = document.createElement('span')
-            toggleBtnCircle.ariaLabel = 'the appearing circle representing if the extension status is on or off'
             toggleBtnCircle.classList.add('toggle-btn-circle')
             
             if(extension.isActive == true) {
@@ -149,7 +148,6 @@ async function getActiveExtensions () {
             toggleBtn.setAttribute('type', 'checkbox')
             toggleBtn.classList.add('toggle-btn')
             const toggleBtnCircle = document.createElement('span')
-            toggleBtnCircle.ariaLabel = 'the appearing circle representing if the extension status is on or off'
             toggleBtnCircle.classList.add('toggle-btn-circle')
             toggleBtnHolder.classList.add('active-toggle-btn-holder')
             toggleBtnCircle.style.left = '19px'
@@ -219,7 +217,6 @@ async function getInactiveExtensions () {
             toggleBtn.setAttribute('type', 'checkbox')
             toggleBtn.classList.add('toggle-btn')
             const toggleBtnCircle = document.createElement('span')
-            toggleBtnCircle.ariaLabel = 'the appearing circle representing if the extension status is on or off'
             toggleBtnCircle.classList.add('toggle-btn-circle')
     
             toggleBtnHolder.append(toggleBtn, toggleBtnCircle)
